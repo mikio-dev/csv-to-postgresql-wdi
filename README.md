@@ -4,7 +4,7 @@ This project automates the ingestion of **World Bank's World Development Indicat
 
 - 🔄 Scheduled ETL pipeline using GitHub Actions
 - 📥 Ingests CSV data from [GitHub (datasets/population)](https://github.com/datasets/population)
-- 🗄 Loads into PostgreSQL (e.g., Supabase, Render, ElephantSQL)
+- 🗄 Loads into PostgreSQL (e.g., Supabase, Render, Neon)
 - 📊 Visualised with [Streamlit](https://streamlit.io/)
 - ☁️ Fully free stack, suitable for public portfolio projects
 
@@ -78,7 +78,7 @@ graph TD
 
    Option A: Streamlit Community Cloud
 
-   1. Go to streamlit.io/cloud
+   1. Go to [streamlit.io/cloud](streamlit.io/cloud)
    2. Click “New app”
    3. Connect your GitHub repo
    4. Select:
@@ -98,3 +98,15 @@ graph TD
    pip install -r requirements.txt
    streamlit run streamlit_app/app.py
    ```
+
+📊 Example Dashboard
+
+A sample dashboard on Streamlit Community Cloud can be accessed here:
+https://wqu3efnkrlqes9wfgmqefc.streamlit.app/
+
+![Dashboard screenshot](./images/dashboard_screenshot.png)
+
+It lets users:
+
+- Choose a country
+- View population trends over time
